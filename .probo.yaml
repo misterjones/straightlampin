@@ -1,4 +1,5 @@
 steps:
   - name: Probo site setup
     plugin: LAMPApp
+    varnish: true
 image: proboci/ubuntu:18.04-php7.3
