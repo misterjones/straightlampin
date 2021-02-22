@@ -1,4 +1,9 @@
 steps:
   - name: Probo site setup
     plugin: LAMPApp
+    varnish:
+      enable: true
+  - name: Test Connection
+    plugin: Shell
+    command: 'echo "I exist to make a Pull Request!"'
 image: proboci/ubuntu:18.04-php7.3
